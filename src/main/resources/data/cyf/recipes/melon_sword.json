@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:iron_sword"
+  },
+  "addition": {
+    "item":"minecraft:melon_slice"
+  },
+  "result": {
+    "item": "minecraft:iron_sword"
+  }
+}

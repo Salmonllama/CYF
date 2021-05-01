@@ -1,3 +1,12 @@
 {
-  "item.cyf.apple_pie": "Apple Pie"
+  "item.cyf.apple_pie": "Apple Pie",
+  "item.cyf.melon_helmet": "Melon Helmet",
+  "item.cyf.melon_chestplate": "Melon Chestplate",
+  "item.cyf.melon_leggings": "Melon Leggings",
+  "item.cyf.melon_boots": "Melon Boots",
+  "item.cyf.melon_sword": "Melon Sword",
+  "item.cyf.melon_pickaxe": "Melon Pickaxe",
+  "item.cyf.melon_axe": "Melon Axe",
+  "item.cyf.melon_hoe": "Melon Hoe",
+  "item.cyf.melon_shovel": "Melon Shovel"
 }
