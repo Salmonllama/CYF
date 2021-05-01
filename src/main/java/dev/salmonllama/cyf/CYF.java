@@ -1,24 +1,21 @@
 package dev.salmonllama.cyf;
 
-import dev.salmonllama.cyf.items.ApplePie;
+import dev.salmonllama.cyf.items.RegisterItems;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.FoodComponent;
-import net.minecraft.item.Item;
+import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 public class CYF implements ModInitializer {
 
-    public static final Item APPLE_PIE = new ApplePie(new FabricItemSettings()
-            .group(ItemGroup.FOOD)
-            .food(new FoodComponent.Builder().hunger(4).saturationModifier(10).build())
-            .maxCount(63)
+    public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
+            new Identifier("cyf", "general"),
+            () -> new ItemStack(RegisterItems.APPLE_PIE)
     );
 
     @Override
     public void onInitialize() {
-        Registry.register(Registry.ITEM, new Identifier("cyf", "apple_pie"), APPLE_PIE);
+        RegisterItems.register();
     }
 }
