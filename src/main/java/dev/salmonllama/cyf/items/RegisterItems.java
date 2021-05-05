@@ -32,7 +32,7 @@ public class RegisterItems {
     public static final Item MELON_HOE = new MelonHoe(MelonToolMaterial.INSTANCE, 0, -1.0F, MELON_TOOL_SETTINGS);
 
     // Foods
-    public static final Item APPLE_PIE = new ApplePie(new FabricItemSettings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(4).saturationModifier(10).build()).maxCount(64));
+    public static final Item APPLE_PIE = new ApplePie(new FabricItemSettings().group(CYF.ITEM_GROUP).food(new FoodComponent.Builder().hunger(4).saturationModifier(10).build()));
 
     public static void register() {
         // Melon Armor
