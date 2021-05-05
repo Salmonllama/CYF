@@ -8,5 +8,6 @@
   "item.cyf.melon_pickaxe": "Melon Pickaxe",
   "item.cyf.melon_axe": "Melon Axe",
   "item.cyf.melon_hoe": "Melon Hoe",
-  "item.cyf.melon_shovel": "Melon Shovel"
+  "item.cyf.melon_shovel": "Melon Shovel",
+  "itemGroup.cyf.general": "CYF Items"
 }
