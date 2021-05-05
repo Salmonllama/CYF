@@ -25,11 +25,11 @@ public class RegisterItems {
 
     // Melon Tools
     private static final Item.Settings MELON_TOOL_SETTINGS = new Item.Settings().group(CYF.ITEM_GROUP).food(new FoodComponent.Builder().hunger(6).saturationModifier(15).build());
-    public static final Item MELON_SWORD = new MelonSword(MelonToolMaterial.INSTANCE, 7, -2.4F, MELON_TOOL_SETTINGS);
-    public static final Item MELON_PICKAXE = new MelonPickaxe(MelonToolMaterial.INSTANCE, 1, -3.0F, MELON_TOOL_SETTINGS);
-    public static final Item MELON_AXE = new MelonAxe(MelonToolMaterial.INSTANCE, 8, -3.2F, MELON_TOOL_SETTINGS);
-    public static final Item MELON_SHOVEL = new MelonShovel(MelonToolMaterial.INSTANCE, 1, -3.0F, MELON_TOOL_SETTINGS);
-    public static final Item MELON_HOE = new MelonHoe(MelonToolMaterial.INSTANCE, 1, -3.0F, MELON_TOOL_SETTINGS);
+    public static final Item MELON_SWORD = new MelonSword(MelonToolMaterial.INSTANCE, 5, -2.4F, MELON_TOOL_SETTINGS);
+    public static final Item MELON_PICKAXE = new MelonPickaxe(MelonToolMaterial.INSTANCE, 3, -2.8F, MELON_TOOL_SETTINGS);
+    public static final Item MELON_AXE = new MelonAxe(MelonToolMaterial.INSTANCE, 8, -3.1F, MELON_TOOL_SETTINGS);
+    public static final Item MELON_SHOVEL = new MelonShovel(MelonToolMaterial.INSTANCE, 3, -3.0F, MELON_TOOL_SETTINGS);
+    public static final Item MELON_HOE = new MelonHoe(MelonToolMaterial.INSTANCE, 0, -1.0F, MELON_TOOL_SETTINGS);
 
     // Foods
     public static final Item APPLE_PIE = new ApplePie(new FabricItemSettings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(4).saturationModifier(10).build()).maxCount(64));
