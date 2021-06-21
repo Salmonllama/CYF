@@ -7,10 +7,8 @@ import dev.salmonllama.cyf.materials.MelonArmorMaterial;
 import dev.salmonllama.cyf.materials.MelonToolMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.ArmorItem;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -18,10 +16,10 @@ public class RegisterItems {
 
     // Melon Armor
     private static final Item.Settings MELON_ARMOR_SETTINGS = new Item.Settings().group(CYF.ITEM_GROUP);
-    public static final Item MELON_HELMET = new ArmorItem(MelonArmorMaterial.INSTANCE, EquipmentSlot.HEAD, MELON_ARMOR_SETTINGS);
-    public static final Item MELON_CHESTPLATE = new ArmorItem(MelonArmorMaterial.INSTANCE, EquipmentSlot.CHEST, MELON_ARMOR_SETTINGS);
-    public static final Item MELON_LEGGINGS = new ArmorItem(MelonArmorMaterial.INSTANCE, EquipmentSlot.LEGS, MELON_ARMOR_SETTINGS);
-    public static final Item MELON_BOOTS = new ArmorItem(MelonArmorMaterial.INSTANCE, EquipmentSlot.FEET, MELON_ARMOR_SETTINGS);
+    public static final Item MELON_HELMET = new CyfArmorItem(MelonArmorMaterial.INSTANCE, EquipmentSlot.HEAD, MELON_ARMOR_SETTINGS);
+    public static final Item MELON_CHESTPLATE = new CyfArmorItem(MelonArmorMaterial.INSTANCE, EquipmentSlot.CHEST, MELON_ARMOR_SETTINGS);
+    public static final Item MELON_LEGGINGS = new CyfArmorItem(MelonArmorMaterial.INSTANCE, EquipmentSlot.LEGS, MELON_ARMOR_SETTINGS);
+    public static final Item MELON_BOOTS = new CyfArmorItem(MelonArmorMaterial.INSTANCE, EquipmentSlot.FEET, MELON_ARMOR_SETTINGS);
 
     // Melon Tools
     private static final Item.Settings MELON_TOOL_SETTINGS = new Item.Settings().group(CYF.ITEM_GROUP).food(new FoodComponent.Builder().hunger(6).saturationModifier(15).build());

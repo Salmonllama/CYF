@@ -4,6 +4,7 @@
   "package": "dev.salmonllama.cyf.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "PlayerEntityMixin"
   ],
   "client": [
   ],
