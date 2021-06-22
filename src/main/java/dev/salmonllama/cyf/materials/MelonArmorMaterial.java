@@ -75,7 +75,7 @@ public class MelonArmorMaterial extends CyfArmorMaterial {
 
     @Override
     public void armorTick(World world, Entity entity, int count) {
-        StatusEffectInstance effect = new StatusEffectInstance(StatusEffects.SATURATION, 15, 2, false, false);
+        StatusEffectInstance effect = new StatusEffectInstance(StatusEffects.SATURATION, 15, 0, false, false);
         LivingEntity player = (LivingEntity) entity;
         player.addStatusEffect(effect);
     }
